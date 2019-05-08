@@ -119,5 +119,6 @@ if __name__ == '__main__':
     x_adv = np.concatenate(x_adv, axis=0)
     np.save(path, x_adv)
     path2 = path.replace(".npy", ".mat") 
-    io.savemat(path2, x_adv)
+    result_dict = {'x_adv': x_adv}
+    io.savemat(path2, result_dict)
     print('Examples stored in {}'.format(path))

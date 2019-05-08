@@ -118,5 +118,6 @@ if __name__ == '__main__':
     path = config['store_adv_path']
     x_adv = np.concatenate(x_adv, axis=0)
     np.save(path, x_adv)
-    io.savemat(path+"/adv_exp.mat", x_adv)
+    path2 = path.replace(".npy", ".mat") 
+    io.savemat(path2, x_adv)
     print('Examples stored in {}'.format(path))

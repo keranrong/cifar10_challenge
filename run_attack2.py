@@ -20,8 +20,8 @@ import cifar10_input
 with open('config.json') as config_file:
     config = json.load(config_file)
 
-#data_path = config['data_path']
-data_path = sys.argv[1]
+data_path = config['data_path']
+
 def run_attack(checkpoint, x_adv, epsilon):
   cifar = cifar10_input.CIFAR10Data(data_path)
 
@@ -81,8 +81,9 @@ if __name__ == '__main__':
   model_dir = config['model_dir']
 
   checkpoint = tf.train.latest_checkpoint(model_dir)
-  x_adv = np.load(config['store_adv_path'])
-
+  stor_adv_path = sys.argv[1]
+  #x_adv = np.load(config['store_adv_path'])
+  x_adv = np.load(stor_adv_path)
   if checkpoint is None:
     print('No checkpoint found')
   elif x_adv.shape != (10000, 32, 32, 3):

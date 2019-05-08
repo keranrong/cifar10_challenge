@@ -9,7 +9,7 @@ from __future__ import print_function
 
 import tensorflow as tf
 import numpy as np
-
+from scipy import io
 import cifar10_input
 
 class LinfPGDAttack:

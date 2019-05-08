@@ -27,6 +27,6 @@
   "num_steps": 20,
   "step_size": 2.0,
   "random_start": true,
-  "loss_func": "xent",
-  "store_adv_path": "PGD20_Xent.npy"
+  "loss_func": "cw", 
+  "store_adv_path": "PGD20_CW.npy"
 }

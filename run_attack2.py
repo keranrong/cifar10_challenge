@@ -41,7 +41,7 @@ def run_attack(checkpoint, x_adv, epsilon):
   if l_inf > epsilon + 0.0001:
     print('maximum perturbation found: {}'.format(l_inf))
     print('maximum perturbation allowed: {}'.format(epsilon))
-    return
+    #return
 
   y_pred = [] # label accumulator
 

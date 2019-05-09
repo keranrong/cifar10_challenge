@@ -27,6 +27,6 @@
   "num_steps": 1,
   "step_size": 2.0,
   "random_start": true,
-  "loss_func": "Xent", 
-  "store_adv_path": "SecFGSM_Xent.npy"
+  "loss_func": "cw", 
+  "store_adv_path": "SecFGSM_CW.npy"
 }

@@ -1,6 +1,6 @@
 {
   "_comment": "===== MODEL CONFIGURATION =====",
-  "model_dir": "models/naturally_trained",
+  "model_dir": "models/model_0",
 
   "_comment": "===== DATASET CONFIGURATION =====",
   "data_path": "cifar10_data",

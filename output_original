@@ -116,6 +116,7 @@ if __name__ == '__main__':
 
     print('Storing examples')
     path = config['store_adv_path']
+    path = "Original Cifar10"
     x_adv = np.concatenate(x_adv, axis=0)
     np.save(path, x_adv)
     path2 = path.replace(".npy", ".mat") 

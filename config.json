@@ -23,10 +23,10 @@
   "eval_on_cpu": false,
 
   "_comment": "=====ADVERSARIAL EXAMPLES CONFIGURATION=====",
-  "epsilon": 4.0,
-  "num_steps": 20,
+  "epsilon": 2.0,
+  "num_steps": 10,
   "step_size": 2.0,
   "random_start": true,
   "loss_func": "cw", 
-  "store_adv_path": "SecPGD20E4_CW.npy"
+  "store_adv_path": "SecPGD20E2_CW.npy"
 }
